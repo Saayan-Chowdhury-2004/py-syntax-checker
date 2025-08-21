@@ -120,12 +120,16 @@ Error: unexpected EOF while parsing
 
 ### Planned upgrades for py-syntax-checker include:
 
-```
 | Auto-fix suggestions for common syntax issues |
 | IDE/editor plugins (VS Code, PyCharm) |
 | Web-based syntax checking interface |
 | Configurable team-specific rules |
 | CI/CD pipeline integration for automated checks |
-```
+
+---
+
+## Conclusion
+
+py-syntax-checker is built to make error detection simple, fast, and reliable. Whether you’re checking a single file, scanning an entire project, or watching code in real time, it keeps your workflow clean and stress-free.
 
 ---

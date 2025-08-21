@@ -1,64 +1,133 @@
 # py-syntax-checker
 A comprehensive Python syntax checker that offers a range of useful features, including batch scanning, integration with Git's pre-commit hook and a user-friendly graphical interface. It also provides real-time directory monitoring and detailed error reporting with visual indicators. It's designed to be both lightweight and professional.
 
-🐍 Python Syntax Checker Plus
+---
 
-A multi-mode Python Syntax Checker that goes beyond compile().
-This tool can:
+# 🐍 Python Syntax Checker Plus
 
-✅ Scan individual files or entire folders
+A **multi-mode Python Syntax Checker** that goes beyond `compile()`.
 
-✅ Run as a Git pre-commit hook (blocks broken commits)
+---
 
-✅ Provide a Tkinter GUI for non-coders
+## 📌 Overview
 
-✅ Auto-check files in real time as you save them (watch mode)
+Python Syntax Checker Plus is a lightweight yet powerful tool to validate Python scripts without executing them.
+It is designed for:
 
-✅ Show detailed error reports with line highlighting and caret pointers
+* 👩‍💻 Beginners learning Python (instant feedback on mistakes)
+* 🛠️ Developers working in teams (pre-commit enforcement)
+* 📊 Educators or trainers (teaching code correctness)
 
-🚀 Features
+---
 
-Single File Check – Validate syntax of any .py file
+## ✨ Features
 
-Batch Mode – Scan all Python files in a directory
+### 🔹 Core
 
-Pre-Commit Hook Ready – Block commits with syntax errors
+* Check syntax of **single files**
+* **Batch mode**: validate all `.py` files in a folder
+* Generate **detailed error reports** with line + caret pointer
 
-GUI Mode – Drag & drop Python files for syntax validation
+### 🔹 Advanced
 
-Directory Watcher – Auto-check whenever files are saved
+* **Pre-commit hook ready**: stop bad code before it hits Git
+* **GUI mode**: simple Tkinter interface for non-coders
+* **Watch mode**: continuously monitor a folder and re-check files on save
 
-Detailed Error Reports – Highlights the offending line with a caret ^
+---
 
-📦 Installation
+## 📂 Project Structure
 
-Clone this repo:
+```
+python-syntax-checker-plus/
+│── syntax_checker/
+│   ├── __init__.py
+│   ├── checker.py       # Single file check
+│   ├── batch.py         # Batch folder scan
+│   ├── watcher.py       # Real-time directory watcher
+│   ├── gui.py           # Tkinter GUI interface
+│── tests/
+│   ├── test_checker.py  # Unit tests
+│── requirements.txt
+│── README.md
+│── setup.py
+│── .pre-commit-config.yaml
+│── example_files/       # Sample buggy Python files
+```
 
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
 git clone https://github.com/your-username/python-syntax-checker-plus.git
 cd python-syntax-checker-plus
+```
 
+### Install Dependencies
 
-(Optional) Install dependencies for watcher mode:
-
+```bash
 pip install watchdog
+```
 
-🛠️ Usage
-🔹 Check a single file
+*(GUI and batch modes don’t require extra dependencies.)*
+
+---
+
+## 🚀 Usage
+
+### 1️⃣ Check a Single File
+
+```bash
 python -m syntax_checker.checker example.py
+```
 
-🔹 Batch check a folder
+### 2️⃣ Batch Mode (check a folder)
+
+```bash
 python -m syntax_checker.batch ./my_project
+```
 
-🔹 GUI mode (Tkinter)
+### 3️⃣ GUI Mode (Tkinter interface)
+
+```bash
 python -m syntax_checker.gui
+```
 
-🔹 Watch mode (auto-check on save)
+### 4️⃣ Watch Mode (auto-check on file save)
+
+```bash
 python -m syntax_checker.watcher ./my_project
+```
 
-📘 Pre-Commit Hook
+---
 
-Add this to .pre-commit-config.yaml in your repo:
+## 🖼️ Example Outputs
 
+### ✅ Valid File
+
+```
+example.py: No Syntax Errors Found ✅
+```
+
+### ❌ File with Error
+
+```
+example.py: Syntax Error
+Line 1: print("Hello world"
+              ^
+Error: unexpected EOF while parsing
+```
+
+---
+
+## 🔒 Pre-Commit Hook Setup
+
+1. Add to `.pre-commit-config.yaml` in your project:
+
+```yaml
 repos:
 -   repo: local
     hooks:
@@ -67,22 +136,44 @@ repos:
         entry: python -m syntax_checker.batch .
         language: system
         types: [python]
+```
 
+2. Install hooks:
 
-Then install hooks:
-
+```bash
 pre-commit install
+```
 
-🖼️ Example Output
+Now, commits with syntax errors will be **blocked automatically**.
 
-For a file with a missing parenthesis:
+---
 
-example.py: Syntax Error
-Line 1: print("Hello world"
-              ^
-Error: unexpected EOF while parsing
+## 🧩 Roadmap
 
+* [ ] Add beginner-friendly hints for common syntax mistakes
+* [ ] Create VS Code extension integration
+* [ ] Build FastAPI-based web version
 
-For a valid file:
+---
 
-example.py: No Syntax Errors Found ✅
+## 📄 License
+
+MIT License. Free to use, modify, and distribute.
+
+---
+
+This version is **cleanly sectioned**:
+
+* Overview
+* Features
+* Project Structure
+* Installation
+* Usage
+* Example Outputs
+* Pre-Commit Hook
+* Roadmap
+* License
+
+---
+
+👉 Do you also want me to **write the unit tests (`tests/test_checker.py`)** so that the repo looks production-grade and not just a script dump?

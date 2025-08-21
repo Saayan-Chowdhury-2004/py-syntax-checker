@@ -99,7 +99,7 @@ python -m syntax_checker.watcher ./my_project
 
 ---
 
-## 🖼6) Example Outputs
+## 6) Example Outputs
 
 ### ✅ Valid File
 

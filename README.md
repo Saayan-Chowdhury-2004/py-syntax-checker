@@ -155,25 +155,3 @@ Now, commits with syntax errors will be **blocked automatically**.
 * [ ] Build FastAPI-based web version
 
 ---
-
-## 📄 License
-
-MIT License. Free to use, modify, and distribute.
-
----
-
-This version is **cleanly sectioned**:
-
-* Overview
-* Features
-* Project Structure
-* Installation
-* Usage
-* Example Outputs
-* Pre-Commit Hook
-* Roadmap
-* License
-
----
-
-👉 Do you also want me to **write the unit tests (`tests/test_checker.py`)** so that the repo looks production-grade and not just a script dump?

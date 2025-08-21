@@ -1,4 +1,4 @@
-# 🐍 Python Syntax Checker Plus
+# 🐍 Python Syntax Checker
 
 A **multi-mode Python Syntax Checker** that goes beyond `compile()`.
 

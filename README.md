@@ -120,6 +120,7 @@ Error: unexpected EOF while parsing
 
 ### Planned upgrades for py-syntax-checker include:
 
+|                                                     |
 |-----------------------------------------------------|
 | Auto-fix suggestions for common syntax issues |
 | IDE/editor plugins (VS Code, PyCharm) |

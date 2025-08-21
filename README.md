@@ -6,7 +6,7 @@ A **multi-mode Python Syntax Checker** that goes beyond `compile()`.
 
 ## 1) Overview
 
-Python Syntax Checker Plus is a lightweight yet powerful tool to validate Python scripts without executing them.
+Python Syntax Checker is a lightweight yet powerful tool to validate Python scripts without executing them.
 It is designed for:
 
 * Beginners learning Python (instant feedback on mistakes)
@@ -25,7 +25,6 @@ It is designed for:
 
 ### 🔹 Advanced
 
-* **Pre-commit hook ready**: stop bad code before it hits Git
 * **GUI mode**: simple Tkinter interface for non-coders
 * **Watch mode**: continuously monitor a folder and re-check files on save
 
@@ -35,7 +34,8 @@ It is designed for:
 
 ```
 python-syntax-checker-plus/
-│── syntax_checker/
+│── example_files/       # Sample buggy Python files
+│── py_syntax_checker/
 │   ├── __init__.py
 │   ├── checker.py       # Single file check
 │   ├── batch.py         # Batch folder scan
@@ -43,9 +43,9 @@ python-syntax-checker-plus/
 │   ├── gui.py           # Tkinter GUI interface
 │── tests/
 │   ├── test_checker.py  # Unit tests
+│── .gitignore       
 │── README.md
 │── setup.py
-│── example_files/       # Sample buggy Python files
 ```
 
 ---

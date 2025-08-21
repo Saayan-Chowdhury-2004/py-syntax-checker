@@ -4,7 +4,7 @@ A **multi-mode Python Syntax Checker** that goes beyond `compile()`.
 
 ---
 
-## 📌 Overview
+## 1) Overview
 
 Python Syntax Checker Plus is a lightweight yet powerful tool to validate Python scripts without executing them.
 It is designed for:
@@ -15,7 +15,7 @@ It is designed for:
 
 ---
 
-## ✨ Features
+## 2) Features
 
 ### 🔹 Core
 
@@ -31,7 +31,7 @@ It is designed for:
 
 ---
 
-## 📂 Project Structure
+## 3) Project Structure
 
 ```
 python-syntax-checker-plus/
@@ -52,7 +52,7 @@ python-syntax-checker-plus/
 
 ---
 
-## ⚙️ Installation
+## 4) Installation
 
 ### Clone Repository
 
@@ -71,7 +71,7 @@ pip install watchdog
 
 ---
 
-## 🚀 Usage
+## 5) Usage
 
 ### 1️⃣ Check a Single File
 
@@ -99,7 +99,7 @@ python -m syntax_checker.watcher ./my_project
 
 ---
 
-## 🖼️ Example Outputs
+## 🖼6) Example Outputs
 
 ### ✅ Valid File
 
@@ -118,7 +118,7 @@ Error: unexpected EOF while parsing
 
 ---
 
-## 🔒 Pre-Commit Hook Setup
+## 7) Pre-Commit Hook Setup
 
 1. Add to `.pre-commit-config.yaml` in your project:
 
@@ -139,14 +139,4 @@ repos:
 pre-commit install
 ```
 
-Now, commits with syntax errors will be **blocked automatically**.
-
----
-
-## 🧩 Roadmap
-
-* [ ] Add beginner-friendly hints for common syntax mistakes
-* [ ] Create VS Code extension integration
-* [ ] Build FastAPI-based web version
-
----
+With this, commits with syntax errors will be **blocked automatically**.

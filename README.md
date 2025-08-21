@@ -9,9 +9,9 @@ A **multi-mode Python Syntax Checker** that goes beyond `compile()`.
 Python Syntax Checker Plus is a lightweight yet powerful tool to validate Python scripts without executing them.
 It is designed for:
 
-* 👩‍💻 Beginners learning Python (instant feedback on mistakes)
-* 🛠️ Developers working in teams (pre-commit enforcement)
-* 📊 Educators or trainers (teaching code correctness)
+* Beginners learning Python (instant feedback on mistakes)
+* Developers working in teams (pre-commit enforcement)
+* Educators or trainers (teaching code correctness)
 
 ---
 
@@ -73,25 +73,25 @@ pip install watchdog
 
 ## 5) Usage
 
-### 1️⃣ Check a Single File
+### a. Check a Single File
 
 ```bash
 python -m syntax_checker.checker example.py
 ```
 
-### 2️⃣ Batch Mode (check a folder)
+### b. Batch Mode (check a folder)
 
 ```bash
 python -m syntax_checker.batch ./my_project
 ```
 
-### 3️⃣ GUI Mode (Tkinter interface)
+### c. GUI Mode (Tkinter interface)
 
 ```bash
 python -m syntax_checker.gui
 ```
 
-### 4️⃣ Watch Mode (auto-check on file save)
+### d. Watch Mode (auto-check on file save)
 
 ```bash
 python -m syntax_checker.watcher ./my_project
@@ -104,7 +104,7 @@ python -m syntax_checker.watcher ./my_project
 ### ✅ Valid File
 
 ```
-example.py: No Syntax Errors Found ✅
+example.py: No Syntax Errors Found
 ```
 
 ### ❌ File with Error

@@ -113,28 +113,3 @@ Line 1: print("Hello world"
               ^
 Error: unexpected EOF while parsing
 ```
-
----
-
-## 7) Pre-Commit Hook Setup
-
-1. Add to `.pre-commit-config.yaml` in your project:
-
-```yaml
-repos:
--   repo: local
-    hooks:
-    -   id: syntax-check
-        name: Python Syntax Checker
-        entry: python -m syntax_checker.batch .
-        language: system
-        types: [python]
-```
-
-2. Install hooks:
-
-```bash
-pre-commit install
-```
-
-With this, commits with syntax errors will be **blocked automatically**.

@@ -33,7 +33,7 @@ It is designed for:
 ## 3) Project Structure
 
 ```
-python-syntax-checker-plus/
+py-syntax-checker/
 │── example_files/       # Sample buggy Python files
 │── py_syntax_checker/
 │   ├── __init__.py
@@ -55,8 +55,8 @@ python-syntax-checker-plus/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/python-syntax-checker-plus.git
-cd python-syntax-checker-plus
+git clone https://github.com/your-username/py-syntax-checker.git
+cd py-syntax-checker
 ```
 
 ### Install Dependencies

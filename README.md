@@ -43,10 +43,8 @@ python-syntax-checker-plus/
 │   ├── gui.py           # Tkinter GUI interface
 │── tests/
 │   ├── test_checker.py  # Unit tests
-│── requirements.txt
 │── README.md
 │── setup.py
-│── .pre-commit-config.yaml
 │── example_files/       # Sample buggy Python files
 ```
 

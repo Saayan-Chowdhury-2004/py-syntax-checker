@@ -118,7 +118,8 @@ Error: unexpected EOF while parsing
 
 ## 7) Future Enhancements
 
-| ### Planned upgrades for py-syntax-checker include: |
+### Planned upgrades for py-syntax-checker include:
+
 |-----------------------------------------------------|
 | Auto-fix suggestions for common syntax issues |
 | IDE/editor plugins (VS Code, PyCharm) |
